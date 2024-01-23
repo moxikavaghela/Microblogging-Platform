@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f8fa;
+      background-color: #3b3dbd;
       margin: 0;
       padding: 0;
       display: flex;
@@ -17,10 +17,10 @@
     }
 
     .signup-container {
-      background-color: #fff;
+      background-color: #51d455;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(73, 184, 145, 0.555);
       width: 300px;
     }
 
@@ -39,8 +39,8 @@
     button {
       width: 100%;
       padding: 12px;
-      background-color: #007BFF;
-      color: #fff;
+      background-color: #dfe7b7df;
+      color: #4c41e8;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -49,30 +49,31 @@
 </head>
 <body>
 
-  <div class="signup-container">
-    <h2>Signup</h2>
+  <div class="signup-container"><hr>
+    <h2><strong><em><u>Registration</u></em></strong></h2>
     <form>
       <table>
-        <tr>
-            <td><label for="name">Full Name</label></td>
+        <tr><hr>
+            <td><label for="name"><strong><i>Full Name:</i></strong></label></td>
             <td><input type="text" name="fullname" id="fullname" required></td>
         </tr>
         <tr>
-          <td><label for="username">Username:</label></td>
+          <td><label for="username"><i><b>Username:</b></i></label></td>
           <td><input type="text" id="username" name="username" required></td>
         </tr>
         <tr>
-            <td><label for="tel"> Number:</label></td>
+            <td><label for="tel"><i><u><b> Number:</b></u></i></label></td>
             <td><input type="tel"id="Phonenumber" name="Phonenumber"></td>
         </tr>
         <tr>
-          <td><label for="email">Email:</label></td>
+          <td><label for="email"><u><i><b>Email:</b></i></u></label></td>
           <td><input type="email" id="email" name="email" required></td>
         </tr>
         <tr>
-            <td><label for="gender">Gender:</label></td>
+            <td><label for="gender"><i><b>Gender:</b></i></label></td>
             <td>
               <select id="gender" name="gender" required>
+                <option value="choose below">Choose option </option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
@@ -80,27 +81,29 @@
             </td>
           </tr>
         <tr>
-            <td><label for="Date of Birth">Date of birth</label></td>
+            <td><label for="Date of Birth"><b><i>Date of birth:</i></b></label></td>
             <td><input type="date" name="date of birth " id="date of birth"required></td>
         </tr>
         <tr>
-          <td><label for="password">Password:</label></td>
+          <td><label for="password"><b><i>Password:</i></b></label></td>
           <td><input type="password" id="password" name="password" required></td>
         </tr>
         <tr>
-          <td><label for="confirmPassword">Confirm Password:</label></td>
+          <td><label for="confirmPassword"><b><i>Confirm Password:</i></b></label></td>
           <td><input type="password" id="confirmPassword" name="confirmPassword" required></td>
         </tr>
-        <tr>
-            <td colspan="2">
-              <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
-              <label for="termsCheckbox">I agree to the <a href="https://google.com" target="_blank">Terms and Conditions</a></label>
-            </td>
-          </tr>
         
-      </table>
-
-      <button type="submit">Sign Up</button>
+      </table><hr>
+      
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+          <label for="termsCheckbox">I agree to the <a href="https://google.com" target="_blank"><strong>Term and Conditions</strong></a></label>
+        </td>
+      </tr>
+      <br>
+      <br><hr>
+      <button type="submit"><strong><u><i>Sign up</i></u></strong></button>
     </form>
   </div>
 
